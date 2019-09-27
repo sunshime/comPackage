@@ -1,0 +1,9 @@
+@designWidth:750;   //适配的屏幕宽度
+   
+   //属性名，值
+   .px2rem(@name, @length){
+       @{name}: unit(@length*320/@designWidth/20 , rem);
+       // @{name}: unit(@length , px);
+   
+       // @{name}: unit(@length , px);
+   }
