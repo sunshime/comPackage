@@ -1,0 +1,132 @@
+//样式文件
+@import '../../common/less/px2rem.less';
+@import '../../common/less/base.less';
+
+.cuskeyboard {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  .keyboardcon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+    .number {
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .numberitem {
+        .px2rem(124);
+        height: @px2rem;
+        // background: #f9f9f9;
+        box-sizing: border-box;
+        border-top: 4px solid #F4F4F4;
+        border-right: 4px solid #F4F4F4;
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-of-type(1) {
+          border-top: 7px solid #F4F4F4;
+          border-left: 7px solid #F4F4F4;
+        }
+
+        &:nth-of-type(2) {
+          border-top: 7px solid #F4F4F4;
+        }
+
+        &:nth-of-type(3) {
+          border-top: 7px solid #F4F4F4;
+        }
+
+        &:nth-of-type(4) {
+          border-left: 7px solid #F4F4F4;
+        }
+
+        &:nth-of-type(7) {
+          border-left: 7px solid #F4F4F4;
+        }
+
+        &:nth-of-type(10) {
+          width: 66.6%;
+          border-bottom: 7px solid #F4F4F4;
+          border-left: 7px solid #F4F4F4;
+        }
+
+        &:nth-of-type(11) {
+          border-bottom: 7px solid #F4F4F4;
+        }
+
+        .numspan {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .px2rem(48);
+          font-size: @px2rem;
+        }
+
+        .textspan {
+          .px2rem(36);
+          font-size: @px2rem;
+        }
+      }
+    }
+
+    .operate {
+      width: 25%;
+
+      .operateitem {
+        width: 100%;
+        .px2rem(124);
+        height: @px2rem;
+        box-sizing: border-box;
+        border-top: 7px solid #F4F4F4;
+        border-right: 7px solid #F4F4F4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .raback {
+          background: url("../../common/img/reback.png");
+          .background();
+          .px2rem(54);
+          width: @px2rem;
+          display: block;
+        }
+
+        .raback {
+          .px2rem(36);
+          height: @px2rem;
+        }
+      }
+
+      .nextitem {
+        background: #F79825;
+        border: none;
+      }
+
+      .sureitem {
+        background: @theme-color;
+        border-top: 4px solid #F4F4F4;
+        border-right: 7px solid #F4F4F4;
+        border-bottom: 7px solid #F4F4F4;
+        .px2rem(378);
+        height: @px2rem;
+      }
+
+      .flexcenter {
+        color: #ffffff;
+        .px2rem(36);
+        font-size: @px2rem;
+      }
+    }
+  }
+}

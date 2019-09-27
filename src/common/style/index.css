@@ -54,3 +54,12 @@ input {
   outline: 0 none;
   border: 0 none;
 }
+.home {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+.home .search {
+  padding: 0.64rem 0;
+  background-color: #5DABF3;
+}

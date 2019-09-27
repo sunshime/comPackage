@@ -1,0 +1,130 @@
+// 搜索框组件
+@import '../../common//less/base.less';
+@import '../../common//less/px2rem.less';
+
+.search {
+  .px2rem(30);
+  margin: 0 @px2rem;
+
+  .search-input {
+    width: 100%;
+    background-color: #fff;
+    .px2rem(8);
+    border-radius: @px2rem;
+  }
+
+  .search-input {
+    .px2rem(76);
+    height: @px2rem;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .icon {
+      .px2rem(76);
+      width: @px2rem;
+      height: @px2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: block;
+        .px2rem(36);
+        width: @px2rem;
+
+      }
+
+      span {
+        .px2rem(37);
+        height: @px2rem;
+
+        background-image: url('../../common//img/search.png');
+        .background();
+      }
+    }
+
+    .input {
+      flex: 1;
+      .px2rem(30);
+      margin-right: @px2rem;
+    }
+
+    .input {
+      .px2rem(17);
+      padding: @px2rem 0;
+    }
+
+    .input {
+      .px2rem(30);
+      font-size: @px2rem;
+    }
+
+    .input {
+      .px2rem(19);
+      padding-left: @px2rem;
+      color: rgb(100, 100, 100);
+
+      ::-webkit-input-placeholder {
+        /*Webkit browsers 谷歌*/
+        color: rgba(164, 164, 164, 1);
+        .px2rem(16);
+        font-size: @px2rem;
+      }
+
+      :-moz-placeholder {
+        /*Mozilla Firefox 4 to 8 火狐*/
+        color: rgba(164, 164, 164, 1);
+        .px2rem(30);
+        font-size: @px2rem;
+      }
+
+      ::moz-placeholder {
+        /*Mozilla Firefox 19+ 火狐*/
+        color: rgba(164, 164, 164, 1);
+        .px2rem(30);
+        font-size: @px2rem;
+      }
+
+      :-ms-input-placeholder {
+        /*Internet Explorer 10+ IE10以上*/
+        color: rgba(164, 164, 164, 1);
+        .px2rem(30);
+        font-size: @px2rem;
+      }
+    }
+
+    .cleartxt {
+      .px2rem(76);
+      width: @px2rem;
+      height: @px2rem;
+    }
+
+    .cleartxt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .px2rem(20);
+      padding-right: @px2rem;
+
+      span {
+        display: block;
+        .px2rem(2);
+        padding: @px2rem 0;
+        border-radius: 50%;
+        border: 1px solid rgb(145, 144, 144);
+        color: rgb(145, 144, 144);
+      }
+
+      span {
+        .px2rem(15);
+        padding-right: @px2rem;
+        padding-left: @px2rem;
+      }
+
+      span {
+        .px2rem(18);
+        font-size: @px2rem;
+      }
+    }
+  }
+}
