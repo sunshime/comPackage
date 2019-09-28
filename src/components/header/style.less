@@ -1,0 +1,173 @@
+//样式文件
+@import '../../common/less/px2rem.less';
+@import '../../common/less/base.less';
+.header{
+    background: @theme-color;
+    position: fixed;
+    width: 100%;
+    .px2rem(88);
+    height: @px2rem;
+    top: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .func{
+            color: #fff;
+            display: flex;
+            .ios9Flex{
+                display: block;
+                position: fixed;
+                .px2rem(15);
+                top: @px2rem;
+                bottom: @px2rem;
+                left:0;
+            }
+            .ios9Flex{
+                .px2rem(58);
+                height: @px2rem;
+            }
+            .vux-x-icon{
+                fill:#fff;
+                .px2rem(58);
+                width: @px2rem;
+                height: @px2rem;
+                display: block;
+            }
+        }
+        .more{
+            position: absolute;
+            .px2rem(30);
+            right:@px2rem;
+        }
+        .title{
+            display: block;
+            .px2rem(36);
+            font-size:@px2rem;
+            width: 90%;
+            margin: auto;
+            .ellipsis();
+        }
+        .back{
+            position: fixed;
+            .px2rem(88);
+            height: @px2rem;
+            width: @px2rem;
+            //display: flex;
+            //justify-content: flex-start;
+            //align-items: center;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            align-items:center;
+            -webkit-align-items: center;
+        }
+    }
+}
+
+.theme{
+    background:#fff;
+    position: fixed;
+    width: 100%;
+    .px2rem(88);
+    height: @px2rem;
+    top: 0;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .func{
+            color: #fff;
+            display: flex;
+            .ios9Flex{
+                display: block;
+                position: fixed;
+                .px2rem(15);
+                top: @px2rem;
+                bottom: @px2rem;
+                left:0;
+            }
+            .ios9Flex{
+                .px2rem(58);
+                height: @px2rem;
+            }
+            .vux-x-icon{
+                fill:@theme-color;
+                .px2rem(48);
+                width: @px2rem;
+                height: @px2rem;
+            }
+        }
+    }
+}
+.specheader{
+    background:#fff;
+    position: fixed;
+    width: 100%;
+    .px2rem(88);
+    height: @px2rem;
+    top: 0;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f5f5f5;
+    box-sizing: border-box;
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .func{
+            color: #fff;
+            display: flex;
+            .ios9Flex{
+                display: block;
+                position: fixed;
+                .px2rem(15);
+                top: @px2rem;
+                bottom: @px2rem;
+                left:0;
+            }
+            .ios9Flex{
+                .px2rem(58);
+                height: @px2rem;
+            }
+            .vux-x-icon{
+                fill:#000;
+                .px2rem(48);
+                width: @px2rem;
+                height: @px2rem;
+            }
+        }
+        .more{
+            position: absolute;
+            .px2rem(30);
+            right:@px2rem;
+        }
+        .title{
+            display: block;
+            .px2rem(36);
+            font-size:@px2rem;
+            width: 90%;
+            margin: auto;
+            .ellipsis();
+        }
+        .back{
+            position: fixed;
+        }
+    }
+}

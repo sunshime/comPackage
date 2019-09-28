@@ -1,55 +1,42 @@
 <template>
   <div class="home">
-    <div class="search">
-      <Search
-        :placeholder="placeholder"
-        @height="getsearchheight"
-        @clearText="clearText"
-        @submit="submit"
-      />
+    <Aheader :name="name" @backing="backing" @height="getheight" />
+    <div class="bodys">
+      <div class="bysearch" @click="search">搜索框的使用例子</div>
+      <div class="bykeyboardnum" @click="keyboardnum">单纯的数字键盘的使用例子</div>
+      <div class="bykeyboardasmd" @click="keyboardasmd">加减乘除数字键盘的使用例子</div>
     </div>
-    <div>{{keyword}}</div>
-    <keyBoard @closekeyboard="closekeyboard" @changekey="changekey" @checkNume="checkNume" />
   </div>
 </template>
 <script>
-import keyBoard from "../components/keyboard";
-import Search from "../components/search";
+import Aheader from "../components/header";
 export default {
   data() {
     return {
+      name: this.$route.meta,
       heighting: {
-        search: 0
-      },
-      placeholder: "输入关键字进行搜索",
-      keyword: "" // 自定义键盘输入的值
+        header: 0
+      }
     };
   },
   components: {
-    keyBoard,
-    Search
+    Aheader
   },
   methods: {
-    getsearchheight(value) {
-      console.log("搜索框的高度---->", value);
-      this.heighting["search"] = value;
+    backing() {
+      console.log("backing=====================返回");
     },
-    clearText() {
-      console.log("263764724679");
+    getheight(value) {
+      this.heighting["header"] = value;
     },
-    submit(value) {
-      console.log("要搜索的内容---->", value);
+    search(){
+        this.$router.push('bysearch');
     },
-    // 
-    closekeyboard(value) {
-      console.log("value--closekeyboard-->", value);
+    keyboardnum(){
+        this.$router.push('bykeyboardnum');
     },
-    changekey(value) {
-      console.log("value-changekey--->", value);
-    },
-    // 
-    checkNume(value) {
-      console.log("value-checkNume--->", value);
+    keyboardasmd(){
+        this.$router.push('bykeyboardasmd');
     }
   }
 };

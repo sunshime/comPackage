@@ -1,0 +1,187 @@
+html,
+body,
+div,
+span,
+p,
+ul,
+li,
+input {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
+  color: #333;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+}
+img {
+  border: 0;
+}
+a,
+img {
+  -webkit-touch-callout: none;
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+input[type=password],
+input[type=text],
+ul {
+  list-style: none;
+}
+:focus {
+  outline: none;
+}
+input {
+  outline: 0 none;
+  border: 0 none;
+}
+.keyboardasmd {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.keyboardasmd .keyboardcon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.keyboardasmd .keyboardcon .handle {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.keyboardasmd .keyboardcon .handle .handleitem {
+  height: 2.64533333rem;
+  box-sizing: border-box;
+  border-top: 6px solid #F4F4F4;
+  border-right: 6px solid #F4F4F4;
+  border-left: 10px solid #F4F4F4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboardasmd .keyboardcon .handle .handleitem:nth-of-type(1) {
+  border-top: 10px solid #F4F4F4;
+}
+.keyboardasmd .keyboardcon .handle .handleitem:nth-of-type(4) {
+  border-bottom: 10px solid #F4F4F4;
+  height: 3.28533333rem;
+}
+.keyboardasmd .keyboardcon .handle .handleitem .numspan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.024rem;
+  border-radius: 4px;
+}
+.keyboardasmd .keyboardcon .handle .handleitem .textspan {
+  font-size: 0.768rem;
+}
+.keyboardasmd .keyboardcon .number {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.keyboardasmd .keyboardcon .number .numberitem {
+  height: 2.64533333rem;
+  box-sizing: border-box;
+  border-top: 6px solid #F4F4F4;
+  border-right: 6px solid #F4F4F4;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboardasmd .keyboardcon .number .numberitem:nth-of-type(1) {
+  border-top: 10px solid #F4F4F4;
+}
+.keyboardasmd .keyboardcon .number .numberitem:nth-of-type(2) {
+  border-top: 10px solid #F4F4F4;
+}
+.keyboardasmd .keyboardcon .number .numberitem:nth-of-type(3) {
+  border-top: 10px solid #F4F4F4;
+}
+.keyboardasmd .keyboardcon .number .numberitem:nth-of-type(10) {
+  width: 66.6%;
+  border-bottom: 10px solid #F4F4F4;
+  height: 3.28533333rem;
+}
+.keyboardasmd .keyboardcon .number .numberitem:nth-of-type(11) {
+  border-bottom: 10px solid #F4F4F4;
+  height: 3.28533333rem;
+}
+.keyboardasmd .keyboardcon .number .numberitem .numspan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.024rem;
+  border-radius: 4px;
+}
+.keyboardasmd .keyboardcon .number .numberitem .textspan {
+  font-size: 0.768rem;
+}
+.keyboardasmd .keyboardcon .operate {
+  width: 20%;
+}
+.keyboardasmd .keyboardcon .operate .operateitem {
+  width: 100%;
+  height: 2.64533333rem;
+  box-sizing: border-box;
+  border-top: 10px solid #F4F4F4;
+  border-right: 10px solid #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboardasmd .keyboardcon .operate .operateitem .raback {
+  background: url("../../common/img/reback.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.152rem;
+  display: block;
+  border-radius: 4px;
+}
+.keyboardasmd .keyboardcon .operate .operateitem .raback {
+  height: 0.768rem;
+}
+.keyboardasmd .keyboardcon .operate .nextitem {
+  background: #F79825;
+  border: none;
+}
+.keyboardasmd .keyboardcon .operate .sureitem {
+  background: #5DABF3;
+  border-top: 6px solid #F4F4F4;
+  border-right: 10px solid #F4F4F4;
+  border-bottom: 10px solid #F4F4F4;
+  height: 8.49066667rem;
+  background: #50e3c2;
+  border-radius: 4px;
+}
+.keyboardasmd .keyboardcon .operate .flexcenter {
+  color: #ffffff;
+  font-size: 0.768rem;
+}

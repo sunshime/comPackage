@@ -24,10 +24,6 @@ h2 {
   font-size: 100%;
   font-weight: normal;
 }
-button,
-input {
-  font-size: 100%;
-}
 img {
   border: 0;
 }
@@ -57,9 +53,17 @@ input {
 .home {
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
 }
-.home .search {
-  padding: 0.64rem 0;
-  background-color: #5DABF3;
+.home .bodys {
+  margin: 3.2rem;
+}
+.home .bodys div {
+  height: 2.56rem;
+  border: 1px solid #cccccc;
+  line-height: 2.56rem;
+  text-align: center;
+  background-color: skyblue;
+}
+.home .bodys div {
+  margin: 1.28rem 0;
 }
