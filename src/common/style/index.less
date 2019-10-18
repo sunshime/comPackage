@@ -91,50 +91,61 @@
   height: 100%;
 }
 
-
+// 图片拖拽
 .drag {
-    position: relative;
-    background-color: #fff;
-  
-    .content {
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+  position: relative;
+  background-color: #fff;
+
+  .content {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .small-picture {
+      .px2rem(24);
+      padding-top: @px2rem;
+
+      p {
+        .px2rem(33);
+        line-height: @px2rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
       }
-      .small-picture {
+
+      p {
         .px2rem(24);
-        padding-top: @px2rem;
-  
-        p {
-          .px2rem(33);
-          line-height: @px2rem;
-          font-family: PingFangSC-Regular;
-          font-weight: 400;
-          color: rgba(153, 153, 153, 1);
-        }
-        p {
-          .px2rem(24);
-          font-size: @px2rem;
-        }
-        p {
-          .px2rem(10);
-          padding-bottom: @px2rem;
-        }
-  
-        .pc-show {
-          display: flex;
-          flex-wrap: wrap;
-  
-          .showpc {
-            .px2rem(14);
-            margin-right: @px2rem;
-            margin-top: @px2rem;
-            background: rgba(245, 247, 250, 1);
-            width: 100%;
-          }
+        font-size: @px2rem;
+      }
+
+      p {
+        .px2rem(10);
+        padding-bottom: @px2rem;
+      }
+
+      .pc-show {
+        display: flex;
+        flex-wrap: wrap;
+
+        .showpc {
+          .px2rem(14);
+          margin-right: @px2rem;
+          margin-top: @px2rem;
+          background: rgba(245, 247, 250, 1);
+          width: 100%;
         }
       }
     }
-  
   }
+
+}
+
+
+// 二维码
+.getqrcode {
+  .px2rem(350);
+  margin-top: @px2rem;
+  background-color: #fff;
+}

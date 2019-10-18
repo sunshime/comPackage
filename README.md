@@ -34,6 +34,16 @@ npm install gulp-autoprefixer --save-dev
 
 # 使用 gulp -v来检查是否安装成功
 # 注意局部的gulp跟全局的gulp版本一定要一致
+
+# 左右滑动选择日期
+npm install --save dayjs
+
+# 图片拖拽效果
+npm install awe-dnd --save
+
+#二维码
+npm install  qrcodejs2 --save
+
 ```
 ## 实现的案例：
 

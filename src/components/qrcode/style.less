@@ -1,0 +1,15 @@
+//样式文件
+@import '../../common/less/px2rem.less';
+@import '../../common/less/base.less';
+
+// 二维码
+.qrcode {
+  .px2rem(10);
+  padding-top: @px2rem;
+  padding-bottom: @px2rem;
+
+  .qrcode_content {
+    display: flex;
+    justify-content: center;
+  }
+}

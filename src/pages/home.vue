@@ -4,6 +4,7 @@
       <div class="bysearch" @click="keyBoard">数字键盘</div>
       <div class="bygetdate" @click="getDate">左右滑动选择日期</div>
       <div class="bydrag" @click="drag">拖拽图片</div>
+      <div class="byqcode" @click="qcode">生成二维码</div>
     </div>
   </div>
 </template>
@@ -17,8 +18,7 @@ export default {
       }
     };
   },
-  components: {
-  },
+  components: {},
   methods: {
     backing() {
       console.log("backing=====================返回");
@@ -26,14 +26,17 @@ export default {
     getheight(value) {
       this.heighting["header"] = value;
     },
-    keyBoard(){
-        this.$router.push('keyBoard');
+    keyBoard() {
+      this.$router.push("keyBoard");
     },
-    getDate(){
-      this.$router.push('getDate');
+    getDate() {
+      this.$router.push("getDate");
     },
-    drag(){
-      this.$router.push('drag');
+    drag() {
+      this.$router.push("drag");
+    },
+    qcode() {
+      this.$router.push("getQcode");
     }
   }
 };
