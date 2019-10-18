@@ -1,70 +1,4 @@
-html,
-body,
-div,
-span,
-p,
-ul,
-li,
-input {
-  margin: 0;
-  padding: 0;
-}
-
-i {
-  font-style: normal;
-}
-
-body {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
-  color: #333;
-  box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-// button,
-// input {
-//   font-size: 100%;
-// }
-
-img {
-  border: 0;
-}
-
-a,
-img {
-  -webkit-touch-callout: none
-}
-
-a,
-a:active,
-a:focus,
-a:hover,
-a:visited {
-  text-decoration: none
-}
-
-input[type=password],
-input[type=text],
-ul {
-  list-style: none;
-}
-
-:focus {
-  outline: none;
-}
-
-input {
-  outline: 0 none;
-  border: 0 none;
-}
-
+@import '../less/px2rem.less';
 @theme-color: #5DABF3; //主色
 @theme-color-sub: #9CD5FF; //次色
 
@@ -85,6 +19,19 @@ input {
   text-overflow: ellipsis;
 }
 
+.background() {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .toast-position-top-offset(@length) {
   @toast-position-top-offset: unit(@length, px);
 }
@@ -97,8 +44,37 @@ input {
   @ttoast-content-font-size: unit(@length, px);
 }
 
-.background() {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+i,
+ul,
+li,
+textarea,
+input {
+  margin: 0;
+  padding: 0;
 }
+
+input[type=password],
+input[type=text],
+textarea {
+  resize: none;
+  outline: 0;
+  -webkit-appearance: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #fff
+}
+
+input {
+  outline: 0 none;
+  border: 0 none;
+}
+
+

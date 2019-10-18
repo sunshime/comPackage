@@ -35,3 +35,7 @@ npm install gulp-autoprefixer --save-dev
 # 使用 gulp -v来检查是否安装成功
 # 注意局部的gulp跟全局的gulp版本一定要一致
 ```
+## 实现的案例：
+
+### 自定义数字键盘
+![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
