@@ -42,3 +42,6 @@ npm install gulp-autoprefixer --save-dev
 
 ### 2、左右滑动选择日期
 ![Image text](https://raw.githubusercontent.com/sunshime/comPackage/master/src/common/img/leftscrolldate.gif)
+
+### 3、拖拽图片
+![Image text](https://raw.githubusercontent.com/sunshime/comPackage/master/src/common/img/drag.gif)

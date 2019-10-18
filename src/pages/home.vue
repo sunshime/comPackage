@@ -3,6 +3,7 @@
     <div class="bodys">
       <div class="bysearch" @click="keyBoard">数字键盘</div>
       <div class="bygetdate" @click="getDate">左右滑动选择日期</div>
+      <div class="bydrag" @click="drag">拖拽图片</div>
     </div>
   </div>
 </template>
@@ -30,6 +31,9 @@ export default {
     },
     getDate(){
       this.$router.push('getDate');
+    },
+    drag(){
+      this.$router.push('drag');
     }
   }
 };

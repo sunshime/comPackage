@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import com from '../src/common/js/com'
+import VueDND from 'awe-dnd';
+Vue.use(VueDND);
 
 Vue.config.productionTip = false
 
