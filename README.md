@@ -37,8 +37,8 @@ npm install gulp-autoprefixer --save-dev
 ```
 ## 实现的案例：
 
-### 自定义数字键盘
+### 1、自定义数字键盘
 ![Image text](https://raw.githubusercontent.com/sunshime/comPackage/master/src/common/img/keyboard.gif)
 
-### 左右滑动选择日期
+### 2、左右滑动选择日期
 ![Image text](https://raw.githubusercontent.com/sunshime/comPackage/master/src/common/img/leftscrolldate.gif)

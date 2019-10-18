@@ -37,7 +37,7 @@ body {
   color: #333;
   width: 100%;
   height: 100vh;
-  background: #f7f6f8;
+  background: #fff;
   font-family: PingFangSC-Medium, PingFangSC;
   font-weight: 500;
   box-sizing: border-box;
