@@ -67,3 +67,43 @@ input {
 .home .bodys div {
   margin: 1.28rem 0;
 }
+.keyboards {
+  width: 100%;
+  height: 100%;
+}
+.keyboards .input {
+  margin: 4.26666667rem auto;
+}
+.keyboards .input {
+  width: 6.4rem;
+  text-align: center;
+}
+.keyboards .input {
+  height: 3.2rem;
+  line-height: 3.2rem;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+}
+.keyboards .input span {
+  display: block;
+  font-size: 0.68266667rem;
+}
+.keyboards .input .icon {
+  width: 0.128rem;
+}
+.keyboards .input .icon {
+  height: 1.28rem;
+  background: url('../img/small.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.keyboards .input .icon {
+  margin-top: 0.85333333rem;
+}
+.keyboards .key {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

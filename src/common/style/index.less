@@ -1,24 +1,84 @@
-@import "../less//px2rem.less";
+@import "../less/px2rem.less";
 @import "../less/base.less";
-.home {
-    width: 100%;
-    height: 100%;
 
-    .bodys{
-        .px2rem(150);
-        margin: @px2rem;
-        div {
-            .px2rem(120);
-            height: @px2rem;
-            border: 1px solid #cccccc;
-            line-height: @px2rem;
-            text-align: center;
-            background-color: skyblue;
-        }
-        div {
-            .px2rem(60);
-            margin: @px2rem 0;
-        }
+.home {
+  width: 100%;
+  height: 100%;
+
+  .bodys {
+    .px2rem(150);
+    margin: @px2rem;
+
+    div {
+      .px2rem(120);
+      height: @px2rem;
+      border: 1px solid #cccccc;
+      line-height: @px2rem;
+      text-align: center;
+      background-color: skyblue;
     }
-    
+
+    div {
+      .px2rem(60);
+      margin: @px2rem 0;
+    }
+  }
+
+}
+
+
+// 键盘
+.keyboards {
+  width: 100%;
+  height: 100%;
+
+  .input {
+    .px2rem(200);
+    margin: @px2rem auto;
+  }
+
+  .input {
+    .px2rem(300);
+    width: @px2rem;
+    text-align: center;
+  }
+
+  .input {
+    .px2rem(150);
+    height: @px2rem;
+    line-height: @px2rem;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+
+    span {
+      display: block;
+      .px2rem(32);
+      font-size: @px2rem;
+    }
+
+    .icon {
+      .px2rem(6);
+      width: @px2rem;
+    }
+
+    .icon {
+      .px2rem(60);
+      height: @px2rem;
+      background: url('../img/small.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .icon{
+        .px2rem(40);
+        margin-top: @px2rem;
+    }
+  }
+
+  .key {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
 }
